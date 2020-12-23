@@ -1,0 +1,87 @@
+type Guild {
+  id: String
+  name: String
+  icon: String
+  owner: Boolean
+  permissions: Int
+  features: [String]
+  permissions_new: String
+}
+
+type GuildConfig {
+  prefix: String
+  guildId: String
+  defaultRole: String
+  memberLogChannel: String
+  deletedLogChannel: String
+  announcementsChannel: String
+  modLogChannel: String
+  mutedRole: String
+}
+
+type User {
+  guilds: [Guild]
+  discordId: String
+  username: String
+  discriminator: String
+  avatar: String
+  roles: [String]
+}
+
+type Role {
+  id: String
+  name: String
+  permissions: Int
+  position: Int
+  color: Int
+  hoist: Boolean
+  managed: Boolean
+  mentionable: Boolean
+  permissions_new: String
+}
+
+type PermissionOverwrite {
+  id: String
+  type: String
+  allow: Int
+  deny: Int
+  allow_new: String
+  deny_new: String
+}
+
+type GuildChannel {
+  id: String
+  last_message_id: String
+  type: Int
+  name: String
+  position: Int
+  parent_id: String
+  topic: String
+  guild_id: String
+  permission_overwrites: [PermissionOverwrite]
+  nsfw: Boolean
+  rate_limit_per_user: Int
+}
+
+type Command {
+  name: String
+  description: String
+  type: String
+  enabled: Boolean
+}
+
+type Query {
+  getUserDetails: User
+  getMutualGuilds: [Guild]
+  getGuildConfig(guildId: String): GuildConfig
+  getRoles(guildId: String): [Role]
+  getChannels(guildId: String): [GuildChannel]
+  getCommands: [Command]
+}
+
+type Mutation {
+  updatePrefixById(guildId: String!, prefix: String!): GuildConfig
+  updateDefaultRole(guildId: String!, roleId: String!): GuildConfig
+  createCommand(name: String!, description: String!, type: String!, enabled: Boolean!): Command
+  updateCommandByName(name: String!, description: String, type: String, enabled: Boolean): Command
+}
