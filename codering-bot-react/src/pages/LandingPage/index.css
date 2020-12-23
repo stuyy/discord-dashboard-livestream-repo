@@ -1,0 +1,56 @@
+.landing-root {
+  min-height: calc(100vh - 70px);
+  background: url('../../assets/wave.svg')
+    no-repeat,
+    #555555;
+  background-position-y: bottom;
+  font-family: 'Jost' !important;
+}
+
+.main-box {
+  width: 60%;
+  font-family: 'Jost' !important;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.main-title {
+  font-family: 'Jost' !important;
+  font-weight: 400 !important;
+  color:  #E5E5E5;
+  font-size: 72px !important;
+}
+
+.main-description {
+  padding-top: 25px;
+  color: #E5E5E5;
+  font-size: 22px;
+  font-family: 'Jost' !important;
+  font-weight: 300 !important;
+}
+
+.main-btn {
+  margin-top: 40px;
+  padding: 30px 50px !important;
+  text-transform: uppercase;
+  background-color: #FFB342 !important;
+  color: rgba(0,0,0,0.7);
+  width: 350px;
+  border-radius: 50px !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+@media(max-width: 900px) {
+  .main-box {
+    width: 90%;
+  }
+}
+
+@media(max-height: 776px) {
+  .main-box {
+    height: 700px;
+  }
+}

@@ -1,0 +1,39 @@
+.dashboard-root {
+  background-color: #555555;
+  min-height: 100vh;
+}
+
+.dashboard-card-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-item {
+  width: 100%;
+  background-color: #6B6B6B;
+  margin: 25px;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+  opacity: 0.5;
+  transition: 300ms opacity ease-in-out, 300ms box-shadow ease-in-out;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+.card-main-text {
+  font-size: 24px;
+  text-align: right;
+  color: white;
+}
+
+.card-icon {
+  font-size: 64px;
+  color: white;
+}

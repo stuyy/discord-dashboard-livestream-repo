@@ -1,0 +1,100 @@
+.guild-config-wrapper {
+  width: 95%;
+  background-color: #FFD39F;
+  margin: 0 auto;
+  border-radius: 8px;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 400px;
+  background-color: #D2D2D2;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  align-self: flex-start;
+}
+
+.header {
+  padding: 15px 25px;
+  background-color: #757D82;
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.header-title {
+  font-family: 'Jost' !important;
+  font-weight: 300 !important;
+  color: #E7E7E7;
+  letter-spacing: 1px;
+}
+
+.prefix-input {
+  width: 90% !important;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 15px !important;
+  background-color: #DFDFDF !important;
+}
+
+.btn {
+  padding: 30px 10px !important;
+  font-size: 40px !important;
+  border-radius: 50px !important;
+  color: #565353;
+  margin: 5px;
+}
+
+.check {
+  background-color: #FFB053 !important;
+}
+
+.refresh {
+  background-color: #FF785A !important;
+}
+
+.buttons {
+  margin: 15px;
+}
+
+.select-dropdown {
+  width: 90%;
+  margin: 0 auto !important;
+  padding: 15px 0px;
+}
+
+.select-title {
+  font-family: 'Jost' !important;
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+.select-box {
+  border-radius: 10px !important;
+}
+
+.prefix-btn-submit {
+  margin: 20px;
+}
+
+.flex-container {
+  flex-direction: column;
+}
+
+@media (max-width: 1500px) {
+  .guild-config-wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+    
+  }
+  .flex-container {
+    width: 100%;
+  }
+  .card {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}

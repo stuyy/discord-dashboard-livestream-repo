@@ -1,0 +1,23 @@
+.menu-btn {
+  background-color: #FFB342 !important;
+  color: #383838;
+  font-size: 24px !important;
+  width: 50px !important;
+}
+
+.nav-heading {
+  font-family: 'Jost' !important;
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  padding-left: 10px;
+}
+
+.nav-flex-bar {
+  width: 100%;
+  background-color: #FFB342;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 2px 20px #383838;
+}

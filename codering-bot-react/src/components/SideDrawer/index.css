@@ -1,0 +1,15 @@
+.drawer-header {
+  background-color: #FFB342;
+  padding: 20px !important;
+  color: #383838;
+  font-size: 20px !important;
+}
+
+.drawer-close-btn {
+  margin-top: 10px;
+  color: #383838;
+}
+
+.drawer-body {
+  background-color: #555555;
+}

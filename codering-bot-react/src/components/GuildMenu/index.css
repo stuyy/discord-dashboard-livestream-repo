@@ -1,0 +1,67 @@
+.guild-menu-container {
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.guild-menu-item {
+  margin: 10px 0px;
+  background-color: #797979;
+  padding: 0px 15px;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 32px;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.guild-text {
+  text-transform: uppercase;
+  font-family: 'Jost' !important;
+  color: #5F5F5F;
+}
+
+.guild-details-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  height: 80%;
+  padding: 25px;
+  background-color: #CECECE;
+}
+
+.guild-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.base-btn {
+  padding: 25px 100px !important;
+  width: 150px;
+  margin-left: 15px;
+  font-family: 'Jost' !important;
+  text-transform: uppercase;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #383838;
+  box-shadow: 0px 3px 6px rgba(80, 80, 80, 0.5);
+  border-radius: 15px !important;
+}
+
+.dashboard-btn {
+  background-color: #FFB342 !important;
+}
+
+.dashboard-btn:hover {
+  background-color: #FFD698 !important;
+}
+.dashboard-btn:active {
+  background-color: #FFD698 !important;
+  transform: scale(0.98) !important;
+  border-color: #FFD698 !important;
+}
